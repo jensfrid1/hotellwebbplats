@@ -1,5 +1,5 @@
 body {
-  background-image: url("Hotellbilder/sky.jpg");
+  background-image: url("https://images.photowall.com/products/63343/sunny-sky-1.jpg?h=699&q=85");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@ section#second {
   border-color: #d1d1d1;
   font-family: Georgia, serif;
   padding: 30px;
-  height: 370px;
+  height: 80%;
   margin: 1em;
 }
 
@@ -67,8 +67,8 @@ img#hotel {
   border-style: groove;
   border-width: thick;
   border-color: #000000;
-  width: 500px;
-  height: 260px;
+  max-width: 500px;
+  max-height: 260px;
   margin: 1em;
 }
 
