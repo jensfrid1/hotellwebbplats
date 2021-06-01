@@ -1,55 +1,68 @@
 body {
   background-image: url("https://wallpapercave.com/wp/wp6782974.jpg");
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.70fr 0.1fr 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr 0.15fr 1fr 1fr 0.5fr;
   grid-template-areas:
     "header header img"
     "navigation navigation navigation"
-    "section2 section2 main"
-    "section2 section2 ."
+    "section2 section2 iframe"
+    "section2 section2 iframe"
     "footer footer footer";
-  grid-gap: 10px;
 }
 
 header {
   grid-area: header;
   text-align: center;
   font-family: Georgia, serif;
-  font-size: 30px;
+  font-size: 2vw;
   margin: 1em;
   margin-top: 2em;
-  margin-left: 4em;
+  height: 20vh;
+  width: 50vw;
 }
 
-img {
+img#lake {
   grid-area: img;
-  width: 590px;
-  height: 260px;
   border-style: groove;
   border-color: #000000;
   border-width: thick;
+  max-width: 95%;
+  height: auto;
   margin: 1em;
+  margin-right: 3em;
 }
 
 section#second {
   grid-area: section2;
   font-family: Georgia, serif;
   background-color: rgba(124, 247, 214, 0.3);
-  padding: 30px;
-  height: 70px;
-  border-style: groove;
-  border-width: 10px;
-  border-color: #d1d1d1;
+  font-size: 1.5vw;
+  padding: 1em;
+  height: 4em;
   margin: 1em;
+  border-style: groove;
+  border-width: 0.7em;
+  border-color: #d1d1d1;
 }
 
-main {
-  grid-area: main;
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    grid-area: iframe;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    margin-left: 1em;
 }
 
 footer {
@@ -75,9 +88,9 @@ p {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1.5vw 1.5vw;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5vw;
   margin-left: 1em;
 }
 

@@ -1,6 +1,5 @@
 body {
-  background-image: url("https://wallpaperaccess.com/full/2591579.jpg");
-  height: 100%;
+  background-image: url("https://wallpaperaccess.com/full/896979.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +12,6 @@ body {
     "section2 section2 img2"
     "section2 section2 section1"
     "footer footer footer";
-  grid-gap: 10px;
 
 }
 
@@ -21,28 +19,32 @@ header {
   grid-area: header;
   text-align: center;
   font-family: Georgia, serif;
-  font-size: 30px;
+  font-size: 2vw;
   margin: 1em;
   margin-top: 2em;
+  height: 20vh;
+  width: 50vw;
 }
 
 section#first {
   grid-area: section1;
   font-family: Georgia, serif;
-  background-color: rgba(124, 247, 214, 0.3);
-  padding: 30px;
-  height: 70px;
+  background-color: rgba(168, 68, 50, 0.8);
+  font-size: 2vw;
+  padding: 1em;
+  height: 4em;
   margin: 1em;
 }
 
 section#second {
   grid-area: section2;
   background-color:rgba(229, 247, 255, 0.8);
+  font-size: 1.5vw;
   border-style: groove;
-  border-width: 10px;
+  border-width: 0.7em;
   border-color: #d1d1d1;
   font-family: Georgia, serif;
-  padding: 30px;
+  padding: 1em;
   height: 80%;
   margin: 1em;
 }
@@ -56,9 +58,10 @@ img#room {
   border-style: groove;
   border-width: thick;
   border-color: #000000;
-  width: 500px;
-  height: 266px;
+  max-width: 95%;
+  height: auto;
   margin: 1em;
+  margin-right: 3em;
 }
 
 img#hotel {
@@ -66,9 +69,10 @@ img#hotel {
   border-style: groove;
   border-width: thick;
   border-color: #000000;
-  max-width: 500px;
-  max-height: 260px;
+  max-width: 95%;
+  height: auto;
   margin: 1em;
+  margin-right: 3em;
 }
 
 footer {
@@ -93,9 +97,9 @@ h2, h3, h4 {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1.5vw 1.5vw;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5vw;
   margin-left: 1em;
 }
 
